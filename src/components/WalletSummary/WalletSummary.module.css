@@ -1,0 +1,30 @@
+.summaryCard {
+    background-color: #172554; /* bg-blue-950 */
+    border: 1px solid #1e3a8a; /* border-blue-800 */
+    color: white;
+    padding: 1.5rem;
+    border-radius: 1rem; /* rounded-2xl */
+}
+
+.titleContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #93c5fd; /* text-blue-300 */
+}
+
+.title {
+    font-weight: 500;
+}
+
+.balance {
+    font-size: 3rem; /* text-5xl */
+    font-weight: 700;
+    letter-spacing: -0.025em; /* tracking-tight */
+    margin: 0.25rem 0;
+}
+
+.currencyInfo {
+    color: #93c5fd; /* text-blue-300 */
+    font-size: 0.875rem; /* text-sm */
+}
