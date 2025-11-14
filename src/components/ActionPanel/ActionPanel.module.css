@@ -1,0 +1,170 @@
+.panel {
+    padding: 1.5rem;
+}
+
+.tabs {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #334155; /* border-slate-700 */
+}
+
+.tabNav {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: -1px;
+}
+
+.tabButton {
+    white-space: nowrap;
+    padding: 0.75rem 0.25rem;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+    font-size: 1.125rem; /* text-lg */
+    background: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    cursor: pointer;
+    color: #9ca3af; /* text-gray-400 */
+}
+
+.tabButton:hover {
+    color: #e5e7eb; /* hover:text-gray-200 */
+    border-color: #6b7281; /* hover:border-gray-500 */
+}
+
+.tabButton.active {
+    border-color: #60a5fa; /* border-blue-400 */
+    color: #60a5fa; /* text-blue-400 */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formGroup {
+    /* Base for form group containers */
+}
+
+.label {
+    display: block;
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500;
+    color: #9ca3af; /* text-gray-400 */
+    margin-bottom: 0.25rem;
+}
+
+.inputWrapper {
+    position: relative;
+    border-radius: 0.375rem; /* rounded-md */
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.inputIcon {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    left: 0;
+    padding-left: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.inputIcon span {
+    color: #9ca3af; /* text-gray-400 */
+}
+
+.input {
+    background-color: #334155; /* bg-slate-700 */
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0.375rem; /* rounded-md */
+    border: 1px solid #475569; /* border-slate-600 */
+    color: #e5e7eb; /* text-gray-200 */
+    padding: 0.5rem 5rem 0.5rem 0.75rem;
+}
+
+.inputWithIcon {
+    padding-left: 2.5rem;
+}
+
+.input:focus, .select:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #3b82f6;
+    border-color: #3b82f6; /* focus:border-blue-500 */
+}
+
+.inputDisabled {
+    background-color: rgba(15, 23, 42, 0.5); /* bg-slate-900/50 */
+    cursor: not-allowed;
+}
+
+.selectWrapper {
+    position: absolute;
+    inset: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.select {
+    height: 100%;
+    border-radius: 0.375rem; /* rounded-md */
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding: 0 1.75rem 0 0.5rem;
+    color: #d1d5db; /* text-gray-300 */
+    appearance: none;
+    -webkit-appearance: none;
+}
+/* No custom arrow for select, relying on browser default for simplicity */
+
+.error {
+    margin-top: 0.5rem;
+    font-size: 0.875rem; /* text-sm */
+    color: #f87171; /* text-red-400 */
+    text-align: center;
+}
+
+.submitButton {
+    width: 100%;
+    background-color: #2563eb; /* bg-blue-600 */
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem; /* rounded-md */
+    transition: background-color 300ms;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.submitButton:hover {
+    background-color: #1d4ed8; /* hover:bg-blue-700 */
+}
+
+.exchangeLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+@media (min-width: 640px) {
+    .exchangeLayout {
+        flex-direction: row;
+    }
+}
+
+.flexGrow {
+    flex: 1;
+    width: 100%;
+}
+
+.balanceHint {
+    font-size: 0.75rem; /* text-xs */
+    color: #6b7281; /* text-gray-500 */
+    margin-top: 0.25rem;
+}
