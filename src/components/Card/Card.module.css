@@ -1,0 +1,5 @@
+.card {
+    background-color: #1e293b; /* bg-slate-800 */
+    border-radius: 0.75rem; /* rounded-xl */
+    border: 1px solid #334155; /* border-slate-700 */
+}
