@@ -1,10 +1,10 @@
 import React, { useState, useMemo, useCallback } from 'react';
-import { Currency } from '../types';
-import { RATES_AGAINst_USD } from '../constants';
-import WalletSummary from '../components/WalletSummary/WalletSummary';
-import BalanceList from '../components/BalanceList/BalanceList';
-import ActionPanel from '../components/ActionPanel/ActionPanel';
-import SettingsModal from '../components/SettingsModal/SettingsModal';
+import { Currency } from './types';
+import { RATES_AGAINST_USD } from './constants';
+import WalletSummary from './components/WalletSummary/WalletSummary';
+import BalanceList from './components/BalanceList/BalanceList';
+import ActionPanel from './components/ActionPanel/ActionPanel';
+import SettingsModal from './components/SettingsModal/SettingsModal';
 
 const WalletIcon = () => (
     <div className="walletIcon">
@@ -41,8 +41,8 @@ const App = () => {
     const totalBalanceInDefaultCurrency = useMemo(() => {
         return Object.keys(balances).reduce((total, currency) => {
             const amount = balances[currency];
-            const amountInUsd = amount / RATES_AGAINst_USD[currency];
-            const amountInDefaultCurrency = amountInUsd * RATES_AGAINst_USD[defaultCurrency];
+            const amountInUsd = amount / RATES_AGAINST_USD[currency];
+            const amountInDefaultCurrency = amountInUsd * RATES_AGAINST_USD[defaultCurrency];
             return total + amountInDefaultCurrency;
         }, 0);
     }, [balances, defaultCurrency]);
@@ -60,8 +60,8 @@ const App = () => {
                 alert("Insufficient funds");
                 return prevBalances;
             }
-            const amountInUsd = amount / RATES_AGAINst_USD[from];
-            const convertedAmount = amountInUsd * RATES_AGAINst_USD[to];
+            const amountInUsd = amount / RATES_AGAINST_USD[from];
+            const convertedAmount = amountInUsd * RATES_AGAINST_USD[to];
 
             return {
                 ...prevBalances,

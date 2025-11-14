@@ -1,16 +1,16 @@
 .summaryCard {
-    background-color: #172554; /* bg-blue-950 */
-    border: 1px solid #1e3a8a; /* border-blue-800 */
+    background-color: #172554;
+    border: 1px solid #1e3a8a;
     color: white;
     padding: 1.5rem;
-    border-radius: 1rem; /* rounded-2xl */
+    border-radius: 1rem;
 }
 
 .titleContainer {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: #93c5fd; /* text-blue-300 */
+    color: #93c5fd;
 }
 
 .title {
@@ -18,13 +18,13 @@
 }
 
 .balance {
-    font-size: 3rem; /* text-5xl */
+    font-size: 3rem;
     font-weight: 700;
-    letter-spacing: -0.025em; /* tracking-tight */
+    letter-spacing: -0.025em;
     margin: 0.25rem 0;
 }
 
 .currencyInfo {
-    color: #93c5fd; /* text-blue-300 */
-    font-size: 0.875rem; /* text-sm */
+    color: #93c5fd;
+    font-size: 0.875rem;
 }
